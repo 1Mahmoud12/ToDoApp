@@ -18,7 +18,7 @@ import 'home_layout.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
-
+//first project
   await CashHelper.init();
   Widget? startWidget;
 
