@@ -70,7 +70,7 @@ class _SettingState extends State<Setting> {
                         flex: 1,
                         child: InkWell(
                           onTap: (){
-                            TODoCubit().get(context).changeMode();
+                            TODoCubit.get(context).changeMode();
                             //print(checkDarkMode);
                           },
                           child: Container(
@@ -86,7 +86,7 @@ class _SettingState extends State<Setting> {
                               children: [
                                 const Text('Dark Mode',style: TextStyle(fontSize: 20,color: Colors.white),textAlign: TextAlign.start,),
                                 const Spacer(),
-                                Icon(TODoCubit().get(context).checkMode?Icons.dark_mode:Icons.light_mode,color: Colors.white,)
+                                Icon(TODoCubit.get(context).checkMode?Icons.dark_mode:Icons.light_mode,color: Colors.white,)
                               ],
                             ),
                           ),

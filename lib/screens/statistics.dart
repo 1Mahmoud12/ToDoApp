@@ -16,7 +16,7 @@ class Statistics extends StatelessWidget {
           elevation: 0,
           leading: IconButton(
               icon: Icon(Icons.arrow_back_ios),
-              color: TODoCubit().get(context).checkMode?Colors.white:Colors.black,
+              color: TODoCubit.get(context).checkMode?Colors.white:Colors.black,
               onPressed: () {
                 Navigator.pop(context);
               }),

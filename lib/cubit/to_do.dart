@@ -18,7 +18,7 @@ class TODoCubit extends Cubit<ToDoStates>{
 
   TODoCubit() : super(ToDoInitialState());
 
-  TODoCubit get(context) =>BlocProvider.of(context);
+  static TODoCubit get(context) =>BlocProvider.of(context);
   var displayTime=StopWatchTimer.getDisplayTime(5);
   List<Widget> screens=[ const HomePage(), Routines(), const Setting()];
   List<BottomNavigationBarItem>iconsBottom=[

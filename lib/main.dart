@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
         darkTheme: darkTheme,
-        themeMode:TODoCubit().get(context).checkMode?ThemeMode.dark:ThemeMode.light,
+        themeMode:TODoCubit.get(context).checkMode?ThemeMode.dark:ThemeMode.light,
         home:  start,
         routes: {'Routines':(context)=>Routines(),
           'HomeLayout':(context)=> const HomeLayout(),

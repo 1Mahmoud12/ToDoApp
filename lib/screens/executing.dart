@@ -38,7 +38,7 @@ class _ExecutingState extends State<Executing> with SingleTickerProviderStateMix
       builder: (context,state) {
 
 
-        var cubit=TODoCubit().get(context);
+        var cubit=TODoCubit.get(context);
 
         String strDigits(int n) => n.toString().padLeft(2, '0');
 
@@ -49,8 +49,8 @@ class _ExecutingState extends State<Executing> with SingleTickerProviderStateMix
         return Scaffold(
         appBar: AppBar(
           leading: IconButton(onPressed: (){
-            if(TODoCubit().get(context).countDownTimer!=null) {
-              TODoCubit().get(context).stopTimer();
+            if(TODoCubit.get(context).countDownTimer!=null) {
+              TODoCubit.get(context).stopTimer();
             }
             Navigator.pop(context);
           },icon: const Icon(Icons.arrow_back_ios)),

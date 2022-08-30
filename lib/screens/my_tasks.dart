@@ -34,12 +34,12 @@ class MyTasks extends StatelessWidget {
       listener: (context, state) {
       },
       builder: (context, state)  {
-        var cubit=TODoCubit().get(context);
+        var cubit=TODoCubit.get(context);
         return Scaffold(
 
             appBar: AppBar(
               leading: IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.arrow_back_ios,
-                color: TODoCubit().get(context).checkMode ? Colors.white : Colors.black,)),
+                color: TODoCubit.get(context).checkMode ? Colors.white : Colors.black,)),
               title: Text('Tasks',
                 style: Theme.of(context).textTheme.bodyText1,),
               centerTitle: true,
@@ -99,7 +99,7 @@ class MyTasks extends StatelessWidget {
                         builder: (context) => Padding(
                           padding: MediaQuery.of(context).viewInsets,
                           child: Container(
-                            color: TODoCubit().get(context).checkMode
+                            color: TODoCubit.get(context).checkMode
                                 ? Colors.black
                                 : Colors.white,
                             child: Padding(
@@ -127,7 +127,7 @@ class MyTasks extends StatelessWidget {
                                       hintText: 'ex: Book Ticket',
                                       styleController: TextStyle(
                                           color:
-                                          TODoCubit().get(context).checkMode
+                                          TODoCubit.get(context).checkMode
                                               ? Colors.white
                                               : Colors.black),
                                       validate: (String s) {
@@ -139,20 +139,20 @@ class MyTasks extends StatelessWidget {
                                       },
                                       prefix: Icon(
                                         Icons.content_paste_sharp,
-                                        color: TODoCubit().get(context).checkMode
+                                        color: TODoCubit.get(context).checkMode
                                             ? Colors.white
                                             : Colors.black,
                                       ),
                                       styleMe: TextStyle(
                                           color:
-                                          TODoCubit().get(context).checkMode
+                                          TODoCubit.get(context).checkMode
                                               ? Colors.white
                                               : Colors.black),
                                       onchange: (s) {
                                         if (routineController.text.length > 2) {
-                                          TODoCubit().get(context).showButtonAdd(true);
+                                          TODoCubit.get(context).showButtonAdd(true);
                                         } else{
-                                          TODoCubit().get(context).showButtonAdd(false);
+                                          TODoCubit.get(context).showButtonAdd(false);
                                         }
                                       }),
                                   const SizedBox(
@@ -177,7 +177,7 @@ class MyTasks extends StatelessWidget {
                                       const SizedBox(
                                         width: 10,
                                       ),
-                                      if (TODoCubit().get(context).addButton)
+                                      if (TODoCubit.get(context).addButton)
                                         Expanded(
                                             child: TextButton(
                                                 onPressed: () {
@@ -186,7 +186,7 @@ class MyTasks extends StatelessWidget {
                                                   timeController.text=DateFormat.Hm().format(DateTime.now().add(const Duration(minutes: 1)));
 
                                                   showModalBottomSheet(
-                                                      backgroundColor: TODoCubit().get(context).checkMode
+                                                      backgroundColor: TODoCubit.get(context).checkMode
                                                           ? Colors.black
                                                           : Colors.white,
                                                       context: context,
@@ -327,7 +327,7 @@ class MyTasks extends StatelessWidget {
                                                                                 );
                                                                         }
 
-                                                                        TODoCubit().get(context).getDatabase(TODoCubit.db).then((value){
+                                                                        TODoCubit.get(context).getDatabase(TODoCubit.db).then((value){
                                                                           Navigator.pop(context);
                                                                           Navigator.pop(context);
                                                                         });

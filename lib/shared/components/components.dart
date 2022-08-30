@@ -71,9 +71,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                     child: OutlinedButton(
                       onPressed: ()
                       {
-                        TODoCubit().get(context).num=10;
-                        TODoCubit().get(context).myDuration1();
-                        TODoCubit().get(context).changeToCompleted(complete: false);
+                        TODoCubit.get(context).num=10;
+                        TODoCubit.get(context).myDuration1();
+                        TODoCubit.get(context).changeToCompleted(complete: false);
 
 
                       },
@@ -84,9 +84,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   const SizedBox(width: 5,),
                   Expanded(
                     child: OutlinedButton(onPressed: (){
-                      TODoCubit().get(context).num=20;
-                      TODoCubit().get(context).myDuration1();
-                      TODoCubit().get(context).changeToCompleted(complete: false);
+                      TODoCubit.get(context).num=20;
+                      TODoCubit.get(context).myDuration1();
+                      TODoCubit.get(context).changeToCompleted(complete: false);
 
                     }, child:  Text('20 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
@@ -95,9 +95,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   const SizedBox(width: 5,),
                   Expanded(
                     child: OutlinedButton(onPressed: (){
-                      TODoCubit().get(context).num=30;
-                      TODoCubit().get(context).myDuration1();
-                      TODoCubit().get(context).changeToCompleted(complete: false);
+                      TODoCubit.get(context).num=30;
+                      TODoCubit.get(context).myDuration1();
+                      TODoCubit.get(context).changeToCompleted(complete: false);
                     }, child:  Text('30 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -109,9 +109,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   Expanded(
                     child: OutlinedButton(onPressed: (){
 
-                      TODoCubit().get(context).num=40;
-                      TODoCubit().get(context).myDuration1();
-                      TODoCubit().get(context).changeToCompleted(complete: false);
+                      TODoCubit.get(context).num=40;
+                      TODoCubit.get(context).myDuration1();
+                      TODoCubit.get(context).changeToCompleted(complete: false);
                     }, child:  Text('40 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -120,9 +120,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   Expanded(
                     child: OutlinedButton(onPressed: (){
 
-                      TODoCubit().get(context).num=50;
-                      TODoCubit().get(context).myDuration1();
-                      TODoCubit().get(context).changeToCompleted(complete: false);
+                      TODoCubit.get(context).num=50;
+                      TODoCubit.get(context).myDuration1();
+                      TODoCubit.get(context).changeToCompleted(complete: false);
                     }, child:  Text('50 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -131,9 +131,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   Expanded(
                     child: OutlinedButton(
                       onPressed: () {
-                        TODoCubit().get(context).num=60;
-                        TODoCubit().get(context).myDuration1();
-                        TODoCubit().get(context).changeToCompleted(complete: false);
+                        TODoCubit.get(context).num=60;
+                        TODoCubit.get(context).myDuration1();
+                        TODoCubit.get(context).changeToCompleted(complete: false);
 
                       },
                       child: Text(
@@ -154,9 +154,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                     child: OutlinedButton(
                       onPressed: () {
 
-                        TODoCubit().get(context).num=70;
-                        TODoCubit().get(context).myDuration1();
-                        TODoCubit().get(context).changeToCompleted(complete: false);
+                        TODoCubit.get(context).num=70;
+                        TODoCubit.get(context).myDuration1();
+                        TODoCubit.get(context).changeToCompleted(complete: false);
                       }, child:  Text('70 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -164,9 +164,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   const SizedBox(width: 5,),
                   Expanded(
                     child: OutlinedButton(onPressed: (){
-                    TODoCubit().get(context).num=80;
-                    TODoCubit().get(context).myDuration1();
-                    TODoCubit().get(context).changeToCompleted(complete: false);
+                    TODoCubit.get(context).num=80;
+                    TODoCubit.get(context).myDuration1();
+                    TODoCubit.get(context).changeToCompleted(complete: false);
                     }, child:  Text('80 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -174,9 +174,9 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                   const SizedBox(width: 5,),
                   Expanded(
                     child: OutlinedButton(onPressed: (){
-                    TODoCubit().get(context).num=90;
-                    TODoCubit().get(context).myDuration1();
-                    TODoCubit().get(context).changeToCompleted(complete: false);
+                    TODoCubit.get(context).num=90;
+                    TODoCubit.get(context).myDuration1();
+                    TODoCubit.get(context).changeToCompleted(complete: false);
                     }, child:  Text('90 min',style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),),style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(defaultColor),
                     ),),
@@ -400,7 +400,7 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                     showModalBottomSheet(context: context, builder: (context)=>Padding(
                       padding: MediaQuery.of(context).viewInsets,
                       child: Container(
-                        color:TODoCubit().get(context).checkMode
+                        color:TODoCubit.get(context).checkMode
                             ? Colors.black
                             : Colors.white,
                         child: Column(
@@ -413,7 +413,7 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                                 hintText: 'ex: gym',
                                 styleController: TextStyle(
                                     color:
-                                    TODoCubit().get(context).checkMode
+                                    TODoCubit.get(context).checkMode
                                         ? Colors.white
                                         : Colors.black),
                                 validate: (String s) {
@@ -425,17 +425,17 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                                 },
                                 prefix: Icon(
                                   Icons.content_paste_sharp,
-                                  color: TODoCubit().get(context).checkMode
+                                  color: TODoCubit.get(context).checkMode
                                       ? Colors.white
                                       : Colors.black,
                                 ),
                                 styleMe: TextStyle(
-                                    color: TODoCubit().get(context).checkMode
+                                    color: TODoCubit.get(context).checkMode
                                         ? Colors.white
                                         : Colors.black),
                                 onchange: (s) {},
                                 onSubmit: (){
-                                  //TODoCubit().get(context).updateDatabase(id: index,nameTable: 'routine',nameRow: 'title',result: editController.text);
+                                  //TODoCubit.get(context).updateDatabase(id: index,nameTable: 'routine',nameRow: 'title',result: editController.text);
                                 }
                             ),
                             const SizedBox(
@@ -446,7 +446,7 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
                       ),
                     )).then((value) {
                       if(value ==' '){}else {
-                        TODoCubit().get(context).updateDatabase(id: index+1,nameTable: nameOfTable,nameRow: 'title',result: editController.text);
+                        TODoCubit.get(context).updateDatabase(id: index+1,nameTable: nameOfTable,nameRow: 'title',result: editController.text);
                       }
 
                     });
@@ -456,10 +456,10 @@ Widget clickItem(context, {required data,required index,required String nameOfTa
 
                       NotificationServiceRoutine().cancel(index);
                     }else{
-                      TODoCubit().get(context).checkTasks(true);
+                      TODoCubit.get(context).checkTasks(true);
                       NotificationServiceTasks().cancel(index);
                     }
-                    TODoCubit().get(context).deleteDatabase(id: data[index]['id'],nameTable: nameOfTable);
+                    TODoCubit.get(context).deleteDatabase(id: data[index]['id'],nameTable: nameOfTable);
 
 
                   }, icon: const Icon(Icons.delete,color: Colors.white,)),

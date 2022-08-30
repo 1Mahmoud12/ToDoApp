@@ -41,7 +41,7 @@ class _HomeLayoutState extends State<HomeLayout> {
     return   BlocConsumer<TODoCubit,ToDoStates>(
         listener: (context,state){},
         builder:(context,state) {
-          var cubit=TODoCubit().get(context);
+          var cubit=TODoCubit.get(context);
           return Scaffold(
           bottomNavigationBar: BottomNavigationBar(
             selectedFontSize: 17,

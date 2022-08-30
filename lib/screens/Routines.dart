@@ -33,7 +33,7 @@ class Routines extends StatelessWidget {
       listener: (context, state) {
       },
       builder: (context, state)  {
-        var cubit=TODoCubit().get(context);
+        var cubit=TODoCubit.get(context);
 
         return Scaffold(
           key: formKey,
@@ -102,7 +102,7 @@ class Routines extends StatelessWidget {
                       builder: (context) => Padding(
                         padding: MediaQuery.of(context).viewInsets,
                         child: Container(
-                          color: TODoCubit().get(context).checkMode
+                          color: TODoCubit.get(context).checkMode
                               ? Colors.black
                               : Colors.white,
                           child: Padding(
@@ -130,7 +130,7 @@ class Routines extends StatelessWidget {
                                     hintText: 'ex: gym',
                                     styleController: TextStyle(
                                         color:
-                                            TODoCubit().get(context).checkMode
+                                            TODoCubit.get(context).checkMode
                                                 ? Colors.white
                                                 : Colors.black),
                                     validate: (String s) {
@@ -142,20 +142,20 @@ class Routines extends StatelessWidget {
                                     },
                                     prefix: Icon(
                                       Icons.content_paste_sharp,
-                                      color: TODoCubit().get(context).checkMode
+                                      color: TODoCubit.get(context).checkMode
                                           ? Colors.white
                                           : Colors.black,
                                     ),
                                     styleMe: TextStyle(
                                         color:
-                                            TODoCubit().get(context).checkMode
+                                            TODoCubit.get(context).checkMode
                                                 ? Colors.white
                                                 : Colors.black),
                                     onchange: (s) {
                                       if (routineController.text.length > 2) {
-                                        TODoCubit().get(context).showButtonAdd(true);
+                                        TODoCubit.get(context).showButtonAdd(true);
                                       } else{
-                                        TODoCubit().get(context).showButtonAdd(false);
+                                        TODoCubit.get(context).showButtonAdd(false);
                                       }
                                     }),
                                 const SizedBox(
@@ -180,7 +180,7 @@ class Routines extends StatelessWidget {
                                     const SizedBox(
                                       width: 10,
                                     ),
-                                    if (TODoCubit().get(context).addButton)
+                                    if (TODoCubit.get(context).addButton)
                                       Expanded(
                                           child: TextButton(
                                               onPressed: () {
@@ -195,7 +195,7 @@ class Routines extends StatelessWidget {
                                                 
 
                                                 showModalBottomSheet(
-                                                  backgroundColor: TODoCubit().get(context).checkMode
+                                                  backgroundColor: TODoCubit.get(context).checkMode
                                                       ? Colors.black
                                                       : Colors.white,
                                                     context: context,
@@ -322,7 +322,7 @@ class Routines extends StatelessWidget {
                                                                                   year: year,month: month,day: days,hour: hour!,minute:minutes!,
                                                                                 );
 
-                                                                                    TODoCubit().get(context).getDatabase(TODoCubit.db).then((value){
+                                                                                    TODoCubit.get(context).getDatabase(TODoCubit.db).then((value){
                                                                                       Navigator.pop(context);
                                                                                       Navigator.pop(context);
                                                                                     });
